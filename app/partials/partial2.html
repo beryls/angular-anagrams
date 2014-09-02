@@ -1,0 +1,11 @@
+<h1>Puzzle time!</h1>
+<form>
+  <label>Enter a series of letters: </label><input type="text" ng-model="word" required></input>
+</form>
+
+<h3>Letter Addition Puzzles</h3>
+<ul>
+  <li ng-repeat="puzzle in findPuzzles(word)">
+        {{puzzle}}
+  </li>
+</ul>

@@ -1,0 +1,11 @@
+<h1>Anagram time!</h1>
+<form>
+  <label>Enter a series of letters: </label><input type="text" ng-model="word" required></input>
+</form>
+
+<h3>Anagrams</h3>
+<ul>
+  <li ng-repeat="anagram in findAnagrams(word)">
+        {{anagram}}
+  </li>
+</ul>
