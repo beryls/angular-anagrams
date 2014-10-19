@@ -1,0 +1,89 @@
+/* app css stylesheet */
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    overflow: -moz-scrollbars-vertical;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    position: relative;
+    text-rendering: optimizelegibility;
+    font-size: 1em;
+    line-height: 1;
+}
+
+#container {
+    position: relative;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@media only screen and (min-width: 768px) {
+    #container {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    #container {
+        width: 960px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    #container {
+        width: 1152px;
+    }
+}
+
+[role="main"] {
+    width: 500px;
+    margin: 0 auto;
+}
+
+li, label {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+h1 {
+    font-size: 3rem;
+}
+h3 {
+    font-size: 2rem;
+}
+.menu {
+    list-style: none;
+    border-bottom: 0.1rem solid black;
+    margin-bottom: 2rem;
+    padding: 0 0 0.5rem;
+
+    &:before {
+        content: "[";
+    }
+    &:after {
+        content: "]";
+    }
+    > li {
+        display: inline;
+
+        &:before {
+            content: "|";
+            padding-right: 0.3em;
+        }
+        &:nth-child(1):before {
+            content: "";
+            padding: 0;
+        }
+    }
+}
+
+
+
